@@ -18,7 +18,7 @@ body {
     align-items: center;
     background-color: #F05D5C; /* Set your desired background color */
     color: #fff; /* Set your desired text color */
-    padding: 20px 80px; /* Adjust the padding as needed */
+    padding: 20px 200px; /* Adjust the padding as needed */
 }
 
 /* Style the logo */
@@ -26,6 +26,7 @@ body {
     flex: 1; /* Take up available space in the middle */
     text-align: ;
    font-size: 2em;
+   font-weight: bold;
 }
 
 .navbar-logo img {
@@ -54,7 +55,7 @@ body {
    
     max-width: 800px;
     margin:  ;
-    padding: 0 80px 20px;
+    padding: 0 200px 20px;
     text-align: left;
 }
 
