@@ -10,45 +10,56 @@ body {
     background-color: #f2f2f2;
 }
 
+/* Style the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F05D5C; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    padding: 10px 20px; /* Adjust the padding as needed */
+}
+
+/* Style the logo */
+.navbar-logo {
+    flex: 1; /* Take up available space in the middle */
+    text-align: ;
+   font-size: 2em;
+}
+
+.navbar-logo img {
+    max-width: 100%; /* Ensure the logo doesn't exceed the container width */
+}
+
+/* Style the navigation links */
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Adjust the gap between navigation items as needed */
+}
+
+.navbar-links li {
+    font-size: 2em; /* Set your desired font size */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
 .container {
     max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+    margin: 0 ;
+    padding: 0 20px 20px;
+    text-align: left;
 }
 
-/* Header styles */
-header {
-    background-color: #F05D5C; /* Updated background color */
-    color: #fff;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-header * {
-   display: inline;
-   
-}
-
-/* Logo styles */
-.logo {
-    font-family: 'Lato', Arial, sans-serif;
-    font-size: 2em;
-    color: #fff;
-}
-
-.main-nav li {
-   align: right;
-    margin: 0 10px;
-   
-}
 
 .main-nav li a {
-    align: right;
-   text-decoration: none;
+    margin-left: auto;
+    text-decoration: none;
     color: #fff;
     font-size: 2em;
 }
@@ -63,8 +74,9 @@ section h2 {
 }
 
 p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+   line-height: 1.5; /* 1.5 times the font size of the element */
 }
 
 .cta-button {
@@ -82,16 +94,6 @@ p {
     background-color: #0056b3;
 }
 
-/* Footer styles */
-footer {
-    background-color: #F05D5C; /* Updated background color */
-    color: #fff;
-    padding: 20px 0;
-}
 
-.main-nav {
-    list-style-type: none;
-    padding: 0;
-   display: inline;
-}
+
 
