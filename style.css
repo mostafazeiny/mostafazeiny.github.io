@@ -75,9 +75,30 @@ section h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
 }
+h1 {
+   font-size: 2em;
+   margin-bottom: 20px;
+   color: #F05D5C;
+}
 
+.custom-h1 {
+   font-size: 3em;
+   margin-bottom: 30px;
+   color: #000000;
+}
+Title {
+   font-size: 3em;
+   
+}
+
+.hashtags {
+       word-spacing: 20px; 
+   color: #F05D5C;
+   
+
+}
 p {
-    font-size: 2em;
+    font-size: 1.5em;
    color: #555555;
     margin-bottom: 30px;
    line-height: 1.6; /* 1.5 times the font size of the element */
@@ -89,8 +110,8 @@ p {
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 1.3em;
+    padding: 20px 32px;
+    font-size: 1.5em;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
