@@ -37,10 +37,11 @@ header {
 /* Main Navigation styles */
 nav ul.main-nav {
     list-style-type: none;
+    display: flex; /* Display navigation items as a flex container */
+    align-items: center; /* Align items vertically centered */
 }
 
 nav ul.main-nav li {
-    display: inline;
     margin: 0 20px;
 }
 
@@ -53,6 +54,16 @@ nav ul.main-nav li a {
 
 nav ul.main-nav li a:hover {
     color: #007BFF;
+}
+
+/* Social links in the header */
+nav ul.main-nav li.social-icon {
+    list-style: none; /* Remove bullet points */
+    margin-left: 20px; /* Add some spacing between icons and navigation items */
+}
+
+nav ul.main-nav li.social-icon a i {
+    color: #fff; /* Set the social icons color to white */
 }
 
 /* Section styles */
@@ -91,14 +102,4 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-}
-
-/* Social links in the header */
-nav ul.main-nav li a i {
-    color: #fff; /* Set the social icons color to white */
-}
-
-/* Social links in the footer */
-footer ul.social-links li a i {
-    /* Remove the color property to use the default color */
 }
