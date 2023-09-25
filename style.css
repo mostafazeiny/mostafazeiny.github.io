@@ -71,17 +71,17 @@ footer {
     padding: 20px 0;
 }
 
-.social-links {
+.main-nav {
     list-style-type: none;
     padding: 0;
 }
 
-.social-links li {
+.main-nav li {
     display: inline;
     margin: 0 10px;
 }
 
-.social-links li a {
+.main-nav li a {
     text-decoration: none;
     color: #fff;
     font-size: 1.5em;
