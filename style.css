@@ -36,4 +36,69 @@ header {
 
 /* Main Navigation styles */
 nav ul.main-nav {
-    list-style-type:
+    list-style-type: none;
+}
+
+nav ul.main-nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul.main-nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul.main-nav li a:hover {
+    color: #007BFF;
+}
+
+/* Section styles */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background-color: #F05D5C;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Social links in the header */
+nav ul.main-nav li a i {
+    color: #fff; /* Set the social icons color to white */
+}
+
+/* Social links in the footer */
+footer ul.social-links li a i {
+    /* Remove the color property to use the default color */
+}
