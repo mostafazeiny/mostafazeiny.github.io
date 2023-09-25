@@ -14,22 +14,17 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    display: inline;
     text-align: center;
 }
 
 /* Header styles */
 header {
-    background-color: #F05D5C;
+    background-color: #F05D5C; /* Updated background color */
     color: #fff;
     padding: 20px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-header * {
-    display: inline;
 }
 
 /* Logo styles */
@@ -37,43 +32,6 @@ header * {
     font-family: 'Lato', Arial, sans-serif;
     font-size: 2em;
     color: #fff;
-}
-
-/* Main Navigation styles */
-nav ul.main-nav {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
-
-nav ul.main-nav li {
-    margin: 0 20px;
-}
-
-nav ul.main-nav li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul.main-nav li a:hover {
-    color: #007BFF;
-}
-
-/* Social links in the header */
-nav ul.main-nav li.social-icon {
-    list-style: none;
-    margin-left: 20px;
-}
-
-nav ul.main-nav li.social-icon a i {
-    color: #fff;
-}
-
-/* Add this CSS rule to move social links to the right */
-nav ul.main-nav li.social-links {
-    margin-left: auto; /* This will push the social links to the right */
 }
 
 /* Section styles */
@@ -108,8 +66,23 @@ p {
 
 /* Footer styles */
 footer {
-    background-color: #F05D5C;
+    background-color: #F05D5C; /* Updated background color */
     color: #fff;
     padding: 20px 0;
-    text-align: center;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
 }
