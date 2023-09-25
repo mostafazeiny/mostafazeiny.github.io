@@ -6,7 +6,7 @@ body, h2, p {
 
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', Arial, sans-serif; /* Specify 'Lato' font-family */
     background-color: #f2f2f2;
 }
 
@@ -23,34 +23,15 @@ header {
     color: #fff;
     padding: 20px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #007BFF;
-}
-
 /* Logo styles */
-.logo img {
-    max-width: 100%;
-    height: auto;
+.logo {
+    font-family: 'Lato', Arial, sans-serif; /* Specify 'Lato' font-family */
+    font-size: 2em;
+    color: #fff;
 }
 
 /* Section styles */
