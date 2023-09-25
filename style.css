@@ -37,6 +37,8 @@ header {
 /* Main Navigation styles */
 nav ul.main-nav {
     list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 nav ul.main-nav li {
@@ -55,19 +57,18 @@ nav ul.main-nav li a:hover {
 }
 
 /* Social links in the header */
-.social-links {
+nav ul.main-nav li.social-icon {
     list-style: none;
-    display: flex;
-    align-items: center;
-    margin-left: auto; /* Push the social links to the right */
+    margin-left: 20px;
 }
 
-.social-links li {
-    margin-left: 20px; /* Add spacing between social icons */
+nav ul.main-nav li.social-icon a i {
+    color: #fff;
 }
 
-.social-links a i {
-    color: #fff; /* Set the social icons color to white */
+/* Add this CSS rule to move social links to the right */
+nav ul.main-nav li.social-links {
+    margin-left: auto; /* This will push the social links to the right */
 }
 
 /* Section styles */
@@ -98,4 +99,12 @@ p {
 
 .cta-button:hover {
     background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background-color: #F05D5C;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
