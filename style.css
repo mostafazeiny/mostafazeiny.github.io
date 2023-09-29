@@ -74,8 +74,6 @@ section{  /* why does the order matter? when it was after the header, it didn't 
 .home{
    display: flex;
    flex-wrap: wrap;
-   flex-direction: row-reverse;
-
    gap: 1.5rem;
    min-height: 100vh;
    alighn-items:center;
@@ -188,7 +186,10 @@ section{  /* why does the order matter? when it was after the header, it didn't 
       text-align:center;
       font-size: 3rem;
    }
-   
+
+   .home {
+      flex-direction: row-reverse;
+   }
     .home .image img{
       width: 365px;   
    }
