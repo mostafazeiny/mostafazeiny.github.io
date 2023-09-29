@@ -1,17 +1,30 @@
-// Optional: Add any JavaScript functionality you need.
-// For example, you can add form validation or interactivity.
-// This is an example structure to get you started:
+let navbar = document.querySelector('.header .navbar')
 
-// Example function for form validation
-function validateForm() {
-    // Implement form validation logic here
-    // Return true if the form is valid, false otherwise
+document.querySelector('#menu').onclick = () =>{
+   navbar.classList.add('active');
 }
 
-// Example event listener for form submission
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-    if (validateForm()) {
-        // If form is valid, submit the form data or take appropriate action
-    }
-});
+document.querySelector('#close').onclick =() =>{
+   navbar.classList.remove('active');
+}
+//mousemove home img
+
+document.addEventListener('mousemove',move);
+function move(e){
+   this.querySelectorAll('.move').forEach(layer =>{
+      const speed = layer.getAttribute('data-speed')
+      
+      const x = (window.innerWidth - e.pageX*speed)/120
+      const y = (window.innerWidth - e.pageX*speed)/120
+      
+      layer.style.transform = 'translateX(${x}px) translateY(${y}px)'
+   })
+}
+
+gsap.from('.logo', {opacity:0, duration:1, delay:2, y:10})
+gsap.from('.navbar', {opacity:0, duration:1, delay:2.1, y:30, stagger:0.2})
+gsap.from('.title', {opacity:0, duration:1, delay:1.6, y:30})
+gsap.from('.description', {opacity:0, duration:1, delay:1.8, y:30})
+gsap.from('.hashtags', {opacity:0, duration:1, delay:1.8, y:30})
+gsap.from('.button', {opacity:0, duration:1, delay:2.1, y:30})
+gsap.from('.image', {opacity:0, duration:1, delay:2.6, y:30})
