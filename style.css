@@ -1,125 +1,213 @@
-/* Reset some default styles */
-body, h2, p {
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body{
+   font-family: 'Lato',sans-serif;
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   transition: .2s linear;
 }
 
-/* Global styles */
-body {
-    font-family: 'Lato', Arial, sans-serif;
-    background-color: #f2f2f2;
+html{
+   font-size: 62.5%;
+}
+
+section{  /* why does the order matter? when it was after the header, it didn't work*/
+   padding: 2rem 9%;
+}
+
+
+
+/* header */
+
+.header{
+   position: fixed
+   top: 0; left: 0 ; right: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2rem 9%;
+   z-index: 2;
+   background: #F05D5C;
+}
+
+.header .logo{
+   font-size: 2rem;
+   font-weight: bold; 
+   text-decoration: none;
+   font-color: white;
+}
+
+.home .content {
+   padding-top: 3rem;
+}
+
+.header .navbar #close {
+   display: none;
+   position: absolute;
+   top: 4rem;
+   right: 2rem;
+   cursor: pointer;
+   font-size: 3rem;
+   color: #fff;
+}
+
+.header .navbar a{
+   font-size: 2rem;
+   margin-right: 2rem;
+   color: white;
+}
+
+.header .navbar a:hover{
+  color: #F2E2E2;  
+}
+
+.header #menu {
+  display: none; 
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #fff;
+} 
+
+/* ends */
+
+/* home */
+
+
+.home{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row-reverse;
+
+   gap: 1.5rem;
+   min-height: 100vh;
+   alighn-items:center;
+   justify-content: center;      
+}
+
+.home .content .description{
+   font-size: 2rem;
+   font-weight: lighter;
+   line-height: 1.6;
+   padding: 2rem 0;
+   color: #555555;
    
+} 
+
+.home .content .hashtags{
+   font-size: 2rem;
+   color: #F05D5C;
+   margin-top: 0.5rem;
+   word-spacing: 20px; 
 }
 
-/* Style the navigation bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F05D5C; /* Set your desired background color */
-    color: #fff; /* Set your desired text color */
-    padding: 20px 200px; /* Adjust the padding as needed */
+.section {
+   padding: 2rem 9%;
+}
+.home .content {
+   flex: 1 1 40rem;
+}
+.home .image {
+   flex: 1 1 40rem;
 }
 
-/* Style the logo */
-.navbar-logo {
-    flex: 1; /* Take up available space in the middle */
-    text-align: ;
-   font-size: 2em;
+.home .image img {
+   width: 100%;
+}
+.home .content #hi{
+   font-size: 2rem;
+   font-weight: bold;
+   color: #F05D5C;
+   padding: 2rem 0;
+}
+
+.home .content #designer {
+   font-size: 3.5rem;
    font-weight: bold;
 }
 
-.navbar-logo img {
-    max-width: 100%; /* Ensure the logo doesn't exceed the container width */
-}
 
-/* Style the navigation links */
-.navbar-links {
-    list-style-type: none;
-    display: flex;
-    gap: 45px; /* Adjust the gap between navigation items as needed */
-}
-
-.navbar-links li {
-    font-size: 2em; /* Set your desired font size */
-}
-
-.navbar-links a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-
-.container {
-   
-    max-width: 800px;
-    margin:  ;
-    padding: 0 200px 20px;
-    text-align: left;
-}
-
-
-.main-nav li a {
-    margin-left: auto;
-    text-decoration: none;
-    color: #fff;
-    font-size: 2em;
-}
-/* Section styles */
-section {
-    padding: 40px 0;
-}
-
-section h2 {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-}
-h1 {
-   font-size: 2em;
-   margin-bottom: 30px;
-   color: #F05D5C;
-}
-
-.custom-h1 {
-   font-size: 3em;
-   margin-bottom: 30px;
-   color: #000000;
-}
-Title {
-   font-size: 3em;
-   
-}
-
-.hashtags {
-       word-spacing: 20px; 
-   color: #F05D5C;
-   
-
-}
-p {
-    font-size: 1.5em;
-   color: #555555;
-    margin-bottom: 30px;
-   line-height: 1.6; /* 1.5 times the font size of the element */
-   
-}
-
-.cta-button {
+.home .content .button {
+    margin-top: 3rem;
     display: inline-block;
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
-    padding: 20px 32px;
-    font-size: 1.5em;
+    padding: 1.3rem 3rem;
+    font-size: 2rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.home .content .button:hover {
     background-color: #0056b3;
 }
+/* end*/
+
+@media (max-width:991px){
+   html{
+      font-size: 55%;
+   }
+   .header{
+      padding: 2rem;   
+      }
+      
+   section {
+      padding: 2rem;   
+      }
+   }
 
 
+@media (max-width:768px){
+   .header #menu {
+      display:inline-block;
+   }
+   
+   .header .navbar{
+      position: fixed;
+      top:0; right: -105%;
+      width:30rem;
+      background-color: black;
+      backdrop-filter: blur (50px);
+      transition: .5s;
+      height: 100%; 
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      z-index:1200;
+   }
+   
+   .header .navbar.active{
+      right: 0;
+   }
+   
+   .header .navbar #close {
+      display: block;
+   }
+   
+   .header .navbar a{
+      display:block;
+      margin: 1rem 0;
+      text-align:center;
+      font-size: 3rem;
+   }
+   
+    .home .image img{
+      width: 365px;   
+   }
+   
+   .home .content #designer{
+      font-size: 4rem;
+   }
+    .home .content .description{
+      font-size:1.6rem;
+}
+}
 
+@media (max-width:450px) {
+   html{
+      font-size: 50%;
+   }
 
+   
+}
