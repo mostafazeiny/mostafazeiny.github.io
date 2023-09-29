@@ -15,9 +15,6 @@ html{
 section{  /* why does the order matter? when it was after the header, it didn't work*/
    padding: 2rem 9%;
 }
-
-
-
 /* header */
 
 .header{
@@ -208,6 +205,4 @@ section{  /* why does the order matter? when it was after the header, it didn't 
    html{
       font-size: 50%;
    }
-
-   
 }
