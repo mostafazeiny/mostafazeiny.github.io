@@ -11,39 +11,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="navbar-logo">
-                Mostafa Zeney
-            </div>
-            <nav>
-                <ul class="navbar-links">
-                 
-                    <li><a href="https://www.linkedin.com/in/mostafazeney/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/mzeney/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+   
+   <!-- Header section starts -->
+   
+      <header class="header">
+         <a href="#" class="logo"> Mostafa Zeney </a>
+         <nav class="navbar">
+            
+              <div id="close" class ="fas fa-times"> </div>
+            
+              <a href="https://www.linkedin.com/in/mostafazeney/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/mzeney/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:mostafa.zeney@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
                    
-                                       <li><a href="mailto:mostafa.zeney@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+          </nav>
+              <div id="menu" class="fas fa-bars"></div>
+       </header>
+      <!-- Header section ends -->
+   
+      <!-- Home section starts -->
+
+   <section class= "home">
+      
+      <div class="content">
+         <h1 id="hi" class="title"> Hi there! </h1>
+         <h1 id="designer" class="title"> I'm a Product & UX Designer </h1>
+                 <p class="description">I'm a User-Centered Product & UX Designer with a background in IT & Engineering. I enjoy making people's lives easier through Design & Tech. Over the years, I've worked for many startups in Kuwait, Milano, Cairo, and Torino. Now I'm in Berlin, working as a Service & Interaction Designer for Accenture Song.</p>
+          <p class="hashtags"> #Behaviorchange #Gamification #Mixedreality #GenAI </p>
+          <a href="https://drive.google.com/file/d/1VWy3x3HN1gc1NMFYPOczoJeWqFDpjGLy/view" class="button" target="_blank" rel="noopener noreferrer" >View Portfolio</a>
+      </div>
+      <div class="image">
+         <img src="https://images.unsplash.com/photo-1594184752380-ca696a9f386d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTU5MzE4NzF8&ixlib=rb-4.0.3&q=85" alt ="" data-speed="-3" class="move">
+   </section>   
+   
+   
+     <!-- Home section ends -->
+   
+    
 
     
-    <section id="about">
-        <div class="container">
-           <h1> Hi there! </h1>  
-           <h1 class="custom-h1"> I'm a Product & UX Designer  </h1>
-           
-            <p>I'm a User-Centered Product & UX Designer with a background in IT & Engineering. I enjoy making people's lives easier through Design & Tech. Over the years, I've worked for many startups in Kuwait, Milano, Cairo, and Torino. Now I'm in Berlin, working as a Service & Interaction Designer for Accenture Song.</p>
-           
-           <p class="hashtags"> #Behaviorchange #Gamification #Mixedreality #GenAI </p>
-            <a href="https://drive.google.com/file/d/1VWy3x3HN1gc1NMFYPOczoJeWqFDpjGLy/view" target="_blank" rel="noopener noreferrer" class="cta-button">View Portfolio</a>
+  
 
-        </div>
-    </section>
-
-    
-
-    <script src="script.js"></script>
+    <!-- GSAP CDN link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
 </html>
