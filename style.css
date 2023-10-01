@@ -122,6 +122,7 @@ section{  /* why does the order matter? when it was after the header, it didn't 
 
 .home .image img {
    width: 100%;
+   border-radius: 150px;
 }
 .home .content #hi{
    font-size: 2rem;
