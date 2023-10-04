@@ -14,7 +14,7 @@ html{
 }
 
 section{  /* why does the order matter? when it was after the header, it didn't work*/
-   padding: 2rem 9%;
+   padding: 2rem 15%;
 }
 
 
@@ -22,34 +22,25 @@ section{  /* why does the order matter? when it was after the header, it didn't 
 /* header */
 
 .header{
-   position: fixed
-   top: 0; left: 0 ; right: 0;
+   /*position: fixed*/
+   top: 0; left: 0;  right: 0;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 2rem 9%;
+   padding: 2rem 15%;
    z-index: 2;
    background: #F05D5C;
 }
 
 .header .logo{
-   font-size: 2rem;
+   font-size: 3rem;
    font-weight: bold; 
-   font-color: white;
+   color: white;
    text-decoration: none;
 }
 
-.header .logo:active{
-  font-color: white;
-  text-decoration: none;
-}
-.header .logo:active{
-  font-color: white;
-  text-decoration: none;
-}
-
 .home .content {
-   padding-top: 3rem;
+   /*padding-top: 3rem;*/
 }
 
 .header .navbar #close {
@@ -63,8 +54,8 @@ section{  /* why does the order matter? when it was after the header, it didn't 
 }
 
 .header .navbar a{
-   font-size: 2rem;
-   margin-right: 2rem;
+   font-size: 3rem;
+   margin-right: 3rem;
    color: white;
 }
 
@@ -75,7 +66,7 @@ section{  /* why does the order matter? when it was after the header, it didn't 
 .header #menu {
   display: none; 
   cursor: pointer;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #fff;
 } 
 
@@ -88,17 +79,17 @@ section{  /* why does the order matter? when it was after the header, it didn't 
    display: flex;
    flex-wrap: wrap;
    /*flex-direction: row-reverse; */
-   gap: 1.5rem;
-   min-height: 100vh;
-   alighn-items:center;
-   justify-content: center;      
+   gap: 4rem;
+   /*min-height: 100vh;*/
+   align-items:center;
+   justify-content: space-between;      
 }
 
 .home .content .description{
    font-size: 2rem;
    font-weight: lighter;
    line-height: 1.6;
-   padding: 2rem 0;
+  /* padding: 2rem 0;*/
    color: #555555;
    
 } 
@@ -114,31 +105,34 @@ section{  /* why does the order matter? when it was after the header, it didn't 
    padding: 2rem 9%;
 }
 .home .content {
-   flex: 1 1 40rem;
+    flex: 1 1 40rem;
+    max-width: 800px;
 }
 .home .image {
-   flex: 1 1 40rem;
+   /*flex: 1 1 40rem */
 }
 
 .home .image img {
-   width: 100%;
+   width: 450px;
+   height: 450px;
    border-radius: 150px;
+   
 }
 .home .content #hi{
    font-size: 2rem;
    font-weight: bold;
    color: #F05D5C;
-   padding: 2rem 0;
+   /*padding: 2rem 0;*/
 }
 
 .home .content #designer {
-   font-size: 3.5rem;
+   font-size: 4rem;
    font-weight: bold;
 }
 
 
 .home .content .button {
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: inline-block;
     background-color: #007BFF;
     color: #fff;
@@ -154,7 +148,7 @@ section{  /* why does the order matter? when it was after the header, it didn't 
 }
 /* end*/
 
-@media (max-width:991px){
+@media (max-width: 1150px){
    html{
       font-size: 55%;
    }
@@ -203,7 +197,8 @@ section{  /* why does the order matter? when it was after the header, it didn't 
    }
    
     .home .image img{
-      width: 365px;   
+      width: 50%;
+      height: 50%;   
    }
    
    .home .content #designer{
@@ -218,6 +213,10 @@ section{  /* why does the order matter? when it was after the header, it didn't 
    html{
       font-size: 50%;
    }
-
+   .home{
+  
+    flex-direction: row-reverse;
+         
+ }
    
 }
