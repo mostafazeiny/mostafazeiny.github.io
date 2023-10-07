@@ -6,6 +6,7 @@ body{
    box-sizing: border-box;
    text-decoration: none;
    transition: .2s linear;
+   text-align: center;
 
 }
 
@@ -26,7 +27,7 @@ section{  /* why does the order matter? when it was after the header, it didn't 
    top: 0; left: 0;  right: 0;
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content:center;
    padding: 2rem 15%;
    z-index: 2;
    background: #F05D5C;
@@ -39,36 +40,7 @@ section{  /* why does the order matter? when it was after the header, it didn't 
    text-decoration: none;
 }
 
-.home .content {
-   /*padding-top: 3rem;*/
-}
 
-.header .navbar #close {
-   display: none;
-   position: absolute;
-   top: 4rem;
-   right: 2rem;
-   cursor: pointer;
-   font-size: 3rem;
-   color: #fff;
-}
-
-.header .navbar a{
-   font-size: 3rem;
-   margin-right: 3rem;
-   color: white;
-}
-
-.header .navbar a:hover{
-  color: #F2E2E2;  
-}
-
-.header #menu {
-  display: none; 
-  cursor: pointer;
-  font-size: 3rem;
-  color: #fff;
-} 
 
 /* ends */
 
@@ -76,8 +48,6 @@ section{  /* why does the order matter? when it was after the header, it didn't 
 
 
 .home{
-   display: flex;
-   flex-wrap: wrap;
    /*flex-direction: row-reverse; */
    gap: 4rem;
    /*min-height: 100vh;*/
@@ -105,16 +75,16 @@ section{  /* why does the order matter? when it was after the header, it didn't 
    padding: 2rem 9%;
 }
 .home .content {
-    flex: 1 1 40rem;
-    max-width: 800px;
-}
-.home .image {
-   /*flex: 1 1 40rem */
+   display: block;
+   margin: 0 auto;
+    max-width: 727px;
 }
 
 .home .image img {
-   width: 450px;
-   height: 450px;
+   display: block;
+   margin: 0 auto;
+   width: 300px;
+   height: 300px;
    border-radius: 150px;
    
 }
@@ -130,22 +100,66 @@ section{  /* why does the order matter? when it was after the header, it didn't 
    font-weight: bold;
 }
 
+.home .buttons{
+   margin-left: 2.5rem;
+}
 
-.home .content .button {
+.home .buttons .button1 {
     margin-top: 1rem;
+    margin-right: 1.5rem;
     display: inline-block;
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
-    padding: 1.3rem 3rem;
+    padding: 1.5rem 3rem;
     font-size: 2rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.home .content .button:hover {
+.home .buttons .button2 {
+   margin-top: 1rem;
+   margin-left: 1.5rem;
+   display: inline-block;
+   background-color: #007BFF;
+   color: #fff;
+   text-decoration: none;
+   padding: 1.5rem 3rem;
+   font-size: 2rem;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+.home .buttons .button1 i{ /*icon to title distance*/
+   margin-right: 10px;
+}
+
+.home .buttons .button2 i{ /*icon to title distance*/
+   margin-right: 10px;
+}
+.home .buttons .button1:hover { 
     background-color: #0056b3;
 }
+
+.home .buttons .button2:hover {
+   background-color: #0056b3;
+} 
+.home .social {
+ padding-top: 2rem;
+   
+}
+.home .social a {
+   font-size: 4rem;
+   margin-inline: 3rem;
+   margin-top: 3rem;
+   align-content: space-between;
+   color: #007BFF;
+}
+
+.home .social a:hover {
+   color: #0056b3;
+}
+
+
 /* end*/
 
 @media (max-width: 1150px){
@@ -205,11 +219,12 @@ section{  /* why does the order matter? when it was after the header, it didn't 
       font-size: 4rem;
    }
     .home .content .description{
-      font-size:1.6rem;
-}
+      font-size:2rem;
 }
 
-@media (max-width:450px) {
+}
+
+@media (max-width:503px) {
    html{
       font-size: 50%;
    }
@@ -219,4 +234,23 @@ section{  /* why does the order matter? when it was after the header, it didn't 
          
  }
    
+ .home .buttons{
+   justify-content: center;
+   margin-left: 0rem;
+ }
+
+ .home .buttons .button1,
+ .home .buttons .button2 {
+   margin: 2rem auto; /* Auto margin for centering horizontally */
+   max-width: 200px;
+   display: block; /* Display as block-level elements (stacks vertically) */
+   background-color: #007BFF;
+   color: #fff;
+   text-decoration: none;
+   padding: 1.5rem 3rem;
+   font-size: 2rem;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+
+}
 }
