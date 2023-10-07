@@ -88,12 +88,6 @@ section{  /* why does the order matter? when it was after the header, it didn't 
    border-radius: 150px;
    
 }
-.home .content #hi{
-   font-size: 2rem;
-   font-weight: bold;
-   color: #F05D5C;
-   /*padding: 2rem 0;*/
-}
 
 .home .content #designer {
    font-size: 4rem;
@@ -225,15 +219,16 @@ section{  /* why does the order matter? when it was after the header, it didn't 
 }
 
 @media (max-width:503px) {
-   html{
-      font-size: 50%;
-   }
+   
    .home{
-  
     flex-direction: row-reverse;
-         
  }
    
+ .home .content #designer {
+   font-size: 3.4rem;
+   font-weight: bold;
+}
+
  .home .buttons{
    justify-content: center;
    margin-left: 0rem;
