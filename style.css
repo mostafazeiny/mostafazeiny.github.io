@@ -213,7 +213,7 @@ section{  /* why does the order matter? when it was after the header, it didn't 
       font-size: 4rem;
    }
     .home .content .description{
-      font-size:2rem;
+      font-size:1.9rem;
 }
 
 }
